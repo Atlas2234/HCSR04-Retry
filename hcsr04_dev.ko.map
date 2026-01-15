@@ -1,0 +1,157 @@
+
+Merging program properties
+
+
+Discarded input sections
+
+ .note.gnu.property
+                0x0000000000000000       0x20 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000      0x2f0
+ .text          0x0000000000000000      0x2f0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .text          0x00000000000002f0        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .text          0x00000000000002f0        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+.init.text      0x0000000000000000      0x144
+ .init.text     0x0000000000000000      0x144 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+                0x0000000000000008                init_module
+
+.exit.text      0x0000000000000000       0x48
+ .exit.text     0x0000000000000000       0x48 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+                0x0000000000000000                cleanup_module
+
+/DISCARD/
+ *(.discard)
+ *(.discard.*)
+ *(.export_symbol)
+
+__ksymtab
+ *(SORT_BY_NAME(___ksymtab+*))
+
+__ksymtab_gpl
+ *(SORT_BY_NAME(___ksymtab_gpl+*))
+
+__kcrctab
+ *(SORT_BY_NAME(___kcrctab+*))
+
+__kcrctab_gpl
+ *(SORT_BY_NAME(___kcrctab_gpl+*))
+
+.ctors
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.init_array
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+
+.altinstructions
+ *(.altinstructions)
+
+__bug_table
+ *(__bug_table)
+
+__jump_table
+ *(__jump_table)
+
+__patchable_function_entries
+                0x0000000000000048       0x28
+ *(__patchable_function_entries)
+ __patchable_function_entries
+                0x0000000000000048       0x28 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.data           0x0000000000000070      0x108
+                0x0000000000000070                . = ALIGN (0x8)
+                0x0000000000000070                __start_alloc_tags = .
+ *(alloc_tags)
+                0x0000000000000070                __stop_alloc_tags = .
+ .data          0x0000000000000070      0x108 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .data          0x0000000000000178        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .data          0x0000000000000178        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+.exit.data      0x0000000000000000        0x8
+ .exit.data     0x0000000000000000        0x8 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.init.data      0x0000000000000000        0x8
+ .init.data     0x0000000000000000        0x8 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.gnu.linkonce.this_module
+                0x0000000000000000      0x4c0
+ .gnu.linkonce.this_module
+                0x0000000000000000      0x4c0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+                0x0000000000000000                __this_module
+
+.plt            0x0000000000000000        0x1
+                0x0000000000000000        0x1 BYTE 0x0
+
+.init.plt       0x0000000000000000        0x1
+                0x0000000000000000        0x1 BYTE 0x0
+
+.text.ftrace_trampoline
+                0x0000000000000000        0x1
+                0x0000000000000000        0x1 BYTE 0x0
+
+.rodata.str1.8  0x0000000000000000      0x261
+ .rodata.str1.8
+                0x0000000000000000      0x261 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.modinfo        0x0000000000000000       0xe6
+ .modinfo       0x0000000000000000       0x63 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .modinfo       0x0000000000000063       0x3c /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .modinfo       0x000000000000009f       0x47 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+__versions      0x0000000000000000      0x340
+ __versions     0x0000000000000000      0x340 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+
+.init.text.ftrace_trampoline
+                0x0000000000000000        0x1
+                0x0000000000000000        0x1 BYTE 0x0
+LOAD /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+LOAD /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+LOAD /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+OUTPUT(/home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.ko elf64-littleaarch64)
+LOAD linker stubs
+
+.note.gnu.property
+                0x0000000000000000       0x20
+ .note.gnu.property
+                0x0000000000000000       0x20 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.note.gnu.build-id
+                0x0000000000000000       0x24
+ .note.gnu.build-id
+                0x0000000000000000       0x24 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+
+.note.Linux     0x0000000000000000       0x40
+ .note.Linux    0x0000000000000000       0x40 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+.bss            0x0000000000000000       0x28
+ .bss           0x0000000000000000       0x28 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .bss           0x0000000000000028        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .bss           0x0000000000000028        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 linker stubs
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o
+
+.comment        0x0000000000000000       0x78
+ .comment       0x0000000000000000       0x28 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.o
+ .comment       0x0000000000000028       0x28 /home/dlz98/Projects/GitRepos/HCSR04-Retry/hcsr04_dev.mod.o
+ .comment       0x0000000000000050       0x28 /home/dlz98/Projects/GitRepos/HCSR04-Retry/.module-common.o

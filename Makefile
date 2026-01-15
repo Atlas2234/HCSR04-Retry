@@ -17,7 +17,7 @@ EXTRA_LDFLAGS += -Map=$(PWD)/$(MODULE_MAP)
 all: modules test
 
 modules:
-	$(MAKE) -C $(KDIR) M=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD) modules LDFLAGS_MODULE="-Map=$(PWD)/$(MODULE_MAP)"
 
 test: test.c
 	$(CC) -Wall -Wextra -O2 -Wl,-Map=$(TEST_MAP) -o test test.c
